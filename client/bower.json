@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "authors": [
+    "Jessica Chou <j4chou@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}

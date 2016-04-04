@@ -1,0 +1,5 @@
+## NPM ##
+server/node_modules
+
+## BOWER ##
+client/bower_components
