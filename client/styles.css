@@ -41,3 +41,26 @@ span, h3 {
 	font-family: Georgia;
 	background-color: #f6e9cf;
 }
+
+.recipePics {
+	 width: 290px;
+    min-height: 250px;
+    max-height: auto;
+    margin: 3px;
+    padding: 3px;
+}
+
+/*.post-container{
+    border:5px solid #333;
+}*/
+
+.post-thumb img {
+    float: left;
+    clear:left;
+    margin-right:8px;
+}
+.post-title{
+    float:left;
+}
+.post-content {float:right;margin-right:8px;}
+.clear{clear:both;}
