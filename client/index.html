@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 	<script src="app.js"></script>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
 	<title>
 		Lazy Gourmet
 	</title>
@@ -16,74 +19,32 @@ $(function() {
 });
 </script>
 
+<header>
+<center>
+
+  <div id="fixed">
+    <h1> Lazy Gourmet </h1>
+      <form action='#' id='searchBar' method='POST'>
+	     <span>
+	     	<br>
+	        <h3>Search for recipes & see them below!</h3>
+          <textarea id='submissionField' input type='post' style='font-size: 16px' placeholder='Enter ingredients here'></textarea>
+	       <input type='submit' id='submitBtn' value='Search!'>
+       </span>
+      </form>
+<br>
+
+  </div>
+
+</header>
+
 <body>
-
-<form action='#' id='searchBar' method='POST'>
-	<span>Search for recipes!</span>
-	<input type='text' id='recipeList' placeholder='Enter ingredient list here'>
-	<input type='submit' id='submitBtn' value='Search Lazy Gourmet'>
-</form>
-
-<div id='recipeList'>
-	See list of recipes below:
-	<div class='recipeBlock'></div>
-	</div>
-	
-
-
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'RZxYO-8OXHo',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
-
-
-
-
+  <br>
+  <center>
+	  <div class='recipeBlock'></div>
+	</center>
 </body>
 
-
-<footer>
-</footer>
+</center>
 
 </html>
